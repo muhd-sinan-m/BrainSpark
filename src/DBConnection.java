@@ -7,9 +7,9 @@ public class DBConnection {
         try {
 
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/mcq_quiz_system",
-                    "root",
-                    "Sinanhrk@1v"
+                    "jdbc:mysql://localhost:3306/db_name",//your db name
+                    "root", //your username
+                    "password" //your password
             );
 
             return con;
