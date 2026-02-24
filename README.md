@@ -1,14 +1,25 @@
+
+
 🧠 BrainSpark — Java Swing Quiz Application
 
 BrainSpark is a desktop-based quiz management and assessment system developed using Java Swing and JDBC.
+
 The application allows users to attempt quizzes, manage questions, review answers, and interact with a MySQL database through an intuitive graphical interface.
 
 This project demonstrates practical implementation of:
+
 Object-Oriented Programming (OOP)
+
 Event-Driven Programming
+
 GUI Development using Swing
+
 Database Connectivity using JDBC
+
 Modular Java Application Design
+
+
+
 ---
 
 ✨ Features
@@ -16,38 +27,61 @@ Modular Java Application Design
 🎯 Quiz Module
 
 Topic-based quiz selection
+
 Multiple-choice questions
+
 Timer-based question system
+
 Automatic question switching on timeout
+
 Answer tracking and evaluation
 
 
+
+---
+
 📊 Review Module
 
-Detailed answer review screen
-
-Displays:
+Detailed answer review screen displaying:
 
 Question
+
 User answer
+
 Correct answer
+
 Correct/Wrong status
+
 Scrollable formatted review panel
 
 
+
+---
+
 🛠 Question Management
+
 View questions using JTable
+
 Topic filtering via JComboBox
+
 Delete selected questions
-Refresh question list dynamically
+
+Dynamic refresh of question list
+
 Database-driven table loading
 
+
+
+---
 
 🎨 UI Enhancements
 
 Custom button styling utility
+
 Hover effects using MouseAdapter
+
 Clean Swing layouts
+
 Scrollable panels and tables
 
 
@@ -87,10 +121,12 @@ MySQL Database
 
 ---
 
+📁 Project Structure
+
 BrainSpark/
 │
 ├── lib/
-│   └── mysql-connector-j.jar        # MySQL JDBC Driver
+│   └── mysql-connector-j.jar
 │
 ├── src/
 │   ├── MainMenu.java
@@ -101,8 +137,7 @@ BrainSpark/
 │   ├── ButtonStyleUtil.java
 │   └── DBConnection.java
 │
-├── database.sql                      # Database schema & data
-│
+├── database.sql
 └── README.md
 
 
@@ -113,6 +148,7 @@ BrainSpark/
 1️⃣ Clone Repository
 
 git clone https://github.com/muhd-sinan-m/BrainSpark.git
+cd BrainSpark
 
 
 ---
@@ -131,134 +167,169 @@ SOURCE database.sql;
 
 ---
 
-3️⃣ 🔧 Compiling & Running (JDBC Setup)
-
-This project uses JDBC to connect Java with a MySQL database.
-The MySQL Connector JAR must be included during compilation and execution.
-
-
----
-
-📦 Requirement
+📦 Requirements
 
 Java JDK 17+
+
 MySQL Server
+
 MySQL Connector/J (JDBC Driver)
-The JDBC driver is already included in:
+
+
+JDBC driver included in:
+
 lib/mysql-connector-j.jar
 
 
 ---
 
-🛠️ Compile the Project (Command Line)
-
-Navigate to the project root folder:
-cd BrainSpark
-Compile all Java files with JDBC driver:
+🛠 Compile the Project
 
 ✅ Windows
+
 javac -cp "lib/mysql-connector-j.jar;src" src/*.java
----
 
 ✅ Linux / macOS
 
 javac -cp "lib/mysql-connector-j.jar:src" src/*.java
+
+
 ---
 
 ▶️ Run the Application
 
 Windows
+
 java -cp "lib/mysql-connector-j.jar;src" MainMenu
----
 
 Linux / macOS
+
 java -cp "lib/mysql-connector-j.jar:src" MainMenu
+
+
 ---
 
 ⚠️ Important Notes
 
-The MySQL JDBC driver must be included in the classpath.
-Make sure MySQL server is running before starting the application.
+MySQL server must be running.
+
+JDBC driver must be included in classpath.
+
 Update database credentials in:
+
+
 src/DBConnection.java
 
 Example:
+
 String password = "YOUR_PASSWORD";
+
+
 ---
 
 🧠 Why JDBC Driver is Needed?
 
-JDBC driver acts as a bridge:
 Java Application
         ↓
 JDBC Driver (mysql-connector-j.jar)
         ↓
 MySQL Database
 
-Without this JAR file, Java cannot communicate with MySQL.
+The JDBC driver acts as a bridge allowing Java to communicate with MySQL.
+
+
+---
 
 🎧 Event Listeners Used
 
 Listener	Usage
+
 ActionListener	Button clicks & Timer events
 ItemListener	Topic selection (JComboBox)
 MouseListener (MouseAdapter)	Button hover styling
+
+
 
 ---
 
 ⏱ Timer Logic
 
 Swing Timer runs every 1 second
+
 Countdown displayed on UI
+
 Marks unanswered questions automatically
+
 Moves to next question
+
 Ends quiz after last question
+
+
 
 ---
 
 🧩 Key Classes
 
 🔹 Question
+
 Stores question data, options, and user answers.
 
 🔹 QuizUI
+
 Controls quiz flow and timer functionality.
 
 🔹 ManageQuestionsUI
+
 Admin interface to manage database questions.
 
 🔹 ReviewUI
+
 Displays formatted answer review.
 
 🔹 ButtonStyleUtil
+
 Reusable button styling utility using AbstractButton.
 
 🔹 DBConnection
+
 Handles MySQL database connection.
+
+
 ---
 
 🎓 Concepts Demonstrated
 
 Java Swing GUI
+
 Event Delegation Model
+
 Interfaces & Adapters
+
 JTable + DefaultTableModel
+
 JDBC PreparedStatement
+
 Timer Events
+
 Modular Utility Classes
+
+
 
 ---
 
-👨‍💻 Author
+👨‍💻 Authors
 
 Muhammed Sinan M
 Daniel George VM
+
 
 ---
 
 📜 License
 
 This project is created for educational and learning purposes.
+
+
 ---
 
 ⭐ Future Improvements
@@ -272,3 +343,7 @@ Score analytics dashboard
 Dark mode UI
 
 Export results to PDF
+
+
+
+---
