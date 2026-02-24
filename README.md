@@ -1,5 +1,3 @@
-
-
 🧠 BrainSpark — Java Swing Quiz Application
 
 BrainSpark is a desktop-based quiz management and assessment system developed using Java Swing and JDBC.
@@ -18,12 +16,7 @@ Database Connectivity using JDBC
 
 Modular Java Application Design
 
-
-
----
-
 ✨ Features
-
 🎯 Quiz Module
 
 Topic-based quiz selection
@@ -36,27 +29,19 @@ Automatic question switching on timeout
 
 Answer tracking and evaluation
 
-
-
----
-
 📊 Review Module
 
 Detailed answer review screen displaying:
 
 Question
 
-User answer
+User Answer
 
-Correct answer
+Correct Answer
 
-Correct/Wrong status
+Correct / Wrong status
 
 Scrollable formatted review panel
-
-
-
----
 
 🛠 Question Management
 
@@ -70,10 +55,6 @@ Dynamic refresh of question list
 
 Database-driven table loading
 
-
-
----
-
 🎨 UI Enhancements
 
 Custom button styling utility
@@ -84,27 +65,15 @@ Clean Swing layouts
 
 Scrollable panels and tables
 
-
-
----
-
 🧰 Technologies Used
-
 Technology	Purpose
-
 Java	Core Programming
 Swing	GUI Development
 AWT	Event Handling & Graphics
 JDBC	Database Connectivity
 MySQL	Database
 OOP	Application Architecture
-
-
-
----
-
 🏗️ Application Architecture
-
 User Interaction
         ↓
 Swing GUI (JFrame, JTable, Buttons)
@@ -118,11 +87,7 @@ JDBC Layer
         ↓
 MySQL Database
 
-
----
-
 📁 Project Structure
-
 BrainSpark/
 │
 ├── lib/
@@ -140,19 +105,10 @@ BrainSpark/
 ├── database.sql
 └── README.md
 
-
----
-
 ⚙️ Setup Instructions
-
 1️⃣ Clone Repository
-
 git clone https://github.com/muhd-sinan-m/BrainSpark.git
 cd BrainSpark
-
-
----
-
 2️⃣ Setup Database
 
 Create database:
@@ -163,10 +119,6 @@ USE mcq_quiz_system;
 Import SQL file:
 
 SOURCE database.sql;
-
-
----
-
 📦 Requirements
 
 Java JDK 17+
@@ -175,60 +127,34 @@ MySQL Server
 
 MySQL Connector/J (JDBC Driver)
 
-
-JDBC driver included in:
+JDBC driver included at:
 
 lib/mysql-connector-j.jar
 
-
----
-
 🛠 Compile the Project
-
 ✅ Windows
-
 javac -cp "lib/mysql-connector-j.jar;src" src/*.java
-
 ✅ Linux / macOS
-
 javac -cp "lib/mysql-connector-j.jar:src" src/*.java
-
-
----
-
 ▶️ Run the Application
-
 Windows
-
 java -cp "lib/mysql-connector-j.jar;src" MainMenu
-
 Linux / macOS
-
 java -cp "lib/mysql-connector-j.jar:src" MainMenu
-
-
----
-
 ⚠️ Important Notes
 
-MySQL server must be running.
+MySQL server must be running
 
-JDBC driver must be included in classpath.
+JDBC driver must be included in classpath
 
 Update database credentials in:
-
 
 src/DBConnection.java
 
 Example:
 
 String password = "YOUR_PASSWORD";
-
-
----
-
 🧠 Why JDBC Driver is Needed?
-
 Java Application
         ↓
 JDBC Driver (mysql-connector-j.jar)
@@ -237,21 +163,11 @@ MySQL Database
 
 The JDBC driver acts as a bridge allowing Java to communicate with MySQL.
 
-
----
-
 🎧 Event Listeners Used
-
 Listener	Usage
-
 ActionListener	Button clicks & Timer events
 ItemListener	Topic selection (JComboBox)
 MouseListener (MouseAdapter)	Button hover styling
-
-
-
----
-
 ⏱ Timer Logic
 
 Swing Timer runs every 1 second
@@ -264,12 +180,7 @@ Moves to next question
 
 Ends quiz after last question
 
-
-
----
-
 🧩 Key Classes
-
 🔹 Question
 
 Stores question data, options, and user answers.
@@ -294,9 +205,6 @@ Reusable button styling utility using AbstractButton.
 
 Handles MySQL database connection.
 
-
----
-
 🎓 Concepts Demonstrated
 
 Java Swing GUI
@@ -313,24 +221,15 @@ Timer Events
 
 Modular Utility Classes
 
-
-
----
-
 👨‍💻 Authors
 
 Muhammed Sinan M
+
 Daniel George VM
-
-
----
 
 📜 License
 
 This project is created for educational and learning purposes.
-
-
----
 
 ⭐ Future Improvements
 
@@ -344,6 +243,14 @@ Dark mode UI
 
 Export results to PDF
 
+If you want, I can also:
 
+🔥 Make it shorter for resumes
 
----
+🎨 Add badges (Java, MySQL, Swing)
+
+📄 Optimize it for college project submission
+
+🧠 Rewrite it in simple student-friendly language
+
+Just tell me 👍
